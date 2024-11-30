@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC Fight Zone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rankstyless.css"> 
+    <script src="rank.js" defer></script>
+</head>
+<body>
+
+    
+    <header>
+        <div class="container">
+            <img src="https://cnbl-cdn.bamgrid.com/assets/74902880ac7921ef97e09cd742a060322bc30dd084146d5031a366c44c4f6da7/original" class="ufc-logo" alt="Logo UFC">
+            <nav>
+                <ul>
+                    <li><a href="blog.html">Inicio</a></li>
+                    <li><a href="peleadores.html">Peleadores</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="linktree.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>RANKINGS UFC</h2>
+            <table>
+                <caption>POUND-FOR-POUND</caption>
+                <thead>
+                    <tr>
+                        <th>Posición</th>
+                        <th>Peleador</th>
+                        <th>País</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr id="row-1" class="fighter-row" onclick="toggleInfo(1)">
+                        <td>1</td>
+                        <td>Islam Makhachev</td>
+                        <td>Rusia</td>
+                    </tr>
+                    <tr id="info-1" class="expand-info">
+                        <td colspan="3">
+                            <img src="https://dmxg5wxfqgb4u.cloudfront.net/2024-10/2/MAKHACHEV_ISLAM_BELT_06-01.png" alt="Islam Makhachev" class="fighter-photo">
+                            <p>Estilo: Sambo. Récord: 24-1-0. Peso: 155 lb.</p>
+                        </td>
+                    </tr>
+
+                    
+                    <tr id="row-2" class="fighter-row" onclick="toggleInfo(2)">
+                        <td>2</td>
+                        <td>Alex Pereira</td>
+                        <td>Brasil</td>
+                    </tr>
+                    <tr id="info-2" class="expand-info">
+                        <td colspan="3">
+                            <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/4705658.png&w=350&h=254" alt="Alex Pereira" class="fighter-photo">
+                            <p>Estilo: Kickboxing. Récord: 7-2-0. Peso: 185 lb.</p>
+                        </td>
+                    </tr>
+
+            
+                    <tr id="row-3" class="fighter-row" onclick="toggleInfo(3)">
+                        <td>3</td>
+                        <td>Jon Jones</td>
+                        <td>EE.UU.</td>
+                    </tr>
+                    <tr id="info-3" class="expand-info">
+                        <td colspan="3">
+                            <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/2335639.png&w=350&h=254" alt="Jon Jones" class="fighter-photo">
+                            <p>Estilo: Wrestling. Récord: 27-1-0. Peso: 205 lb.</p>
+                        </td>
+                    </tr>
+
+                    
+                    <tr id="row-4" class="fighter-row" onclick="toggleInfo(4)">
+                        <td>4</td>
+                        <td>Ilia Topuria</td>
+                        <td>España/Georgia</td>
+                    </tr>
+                    <tr id="info-4" class="expand-info">
+                        <td colspan="3">
+                            <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/4350812.png&w=350&h=254" alt="Ilia Topuria" class="fighter-photo">
+                            <p>Estilo: Grappling. Récord: 13-0-0. Peso: 145 lb.</p>
+                        </td>
+                    </tr>
+
+                    
+                    <tr id="row-5" class="fighter-row" onclick="toggleInfo(5)">
+                        <td>5</td>
+                        <td>Belal Muhammad</td>
+                        <td>EE.UU.</td>
+                    </tr>
+                    <tr id="info-5" class="expand-info">
+                        <td colspan="3">
+                            <img src="https://dmxg5wxfqgb4u.cloudfront.net/2024-10/2/MUHAMMAD_BELAL_BELTMOCK.png" alt="Belal Muhammad" class="fighter-photo">
+                            <p>Estilo: Wrestling. Récord: 22-3-0. Peso: 170 lb.</p>
+                        </td>
+                    </tr>
+
+                    
+                    <tr id="row-6" class="fighter-row" onclick="toggleInfo(6)">
+                        <td>6</td>
+                        <td>Dricus Du Plessis</td>
+                        <td>Sudáfrica</td>
+                    </tr>
+                    <tr id="info-6" class="expand-info">
+                        <td colspan="3">
+                            <img src="https://a.espncdn.com/i/headshots/mma/players/full/3166126.png" alt="Dricus Du Plessis" class="fighter-photo">
+                            <p>Estilo: MMA. Récord: 19-2-0. Peso: 185 lb.</p>
+                        </td>
+                    </tr>
+
+                    
+                    <tr id="row-7" class="fighter-row" onclick="toggleInfo(7)">
+                        <td>7</td>
+                        <td>Merab Dvalishvili</td>
+                        <td>Georgia</td>
+                    </tr>
+                    <tr id="info-7" class="expand-info">
+                        <td colspan="3">
+                            <img src="https://dmxg5wxfqgb4u.cloudfront.net/2024-10/2/DVALISHVILI_MERAB_BELT.png" alt="Merab Dvalishvili" class="fighter-photo">
+                            <p>Estilo: Wrestling. Récord: 15-4-0. Peso: 135 lb.</p>
+                        </td>
+                    </tr>
+
+                    
+                    <tr id="row-8" class="fighter-row" onclick="toggleInfo(8)">
+                        <td>8</td>
+                        <td>Tom Aspinall</td>
+                        <td>Reino Unido</td>
+                    </tr>
+                    <tr id="info-8" class="expand-info">
+                        <td colspan="3">
+                            <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/4010976.png&w=350&h=254" alt="Tom Aspinall" class="fighter-photo">
+                            <p>Estilo: MMA. Récord: 13-2-0. Peso: 250 lb.</p>
+                        </td>
+                    </tr>
+
+                    
+                    <tr id="row-9" class="fighter-row" onclick="toggleInfo(9)">
+                        <td>9</td>
+                        <td>Leon Edwards</td>
+                        <td>Reino Unido</td>
+                    </tr>
+                    <tr id="info-9" class="expand-info">
+                        <td colspan="3">
+                            <img src="https://www.wrestlingstore.pk/super_stars/EDWARDSLEON7698.png" alt="Leon Edwards" class="fighter-photo">
+                            <p>Estilo: Kickboxing. Récord: 20-3-0. Peso: 170 lb.</p>
+                        </td>
+                    </tr>
+
+                    
+                    <tr id="row-10" class="fighter-row" onclick="toggleInfo(10)">
+                        <td>10</td>
+                        <td>Alexander Volkanovski</td>
+                        <td>Australia</td>
+                    </tr>
+                    <tr id="info-10" class="expand-info">
+                        <td colspan="3">
+                            <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/3949584.png&w=350&h=254" alt="Alexander Volkanovski" class="fighter-photo">
+                            <p>Estilo: MMA. Récord: 25-2-0. Peso: 145 lb.</p>
+                        </td>
+                    </tr>
+
+                    
+                    <tr id="row-11" class="fighter-row" onclick="toggleInfo(11)">
+                        <td>11</td>
+                        <td>Alexandre Pantoja</td>
+                        <td>Brasil</td>
+                    </tr>
+                    <tr id="info-11" class="expand-info">
+                        <td colspan="3">
+                            <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/2560746.png&w=350&h=254" alt="Alexandre Pantoja" class="fighter-photo">
+                            <p>Estilo: BJJ. Récord: 25-5-0. Peso: 125 lb.</p>
+                        </td>
+                    </tr>
+
+                    
+                    <tr id="row-12" class="fighter-row" onclick="toggleInfo(12)">
+                        <td>12</td>
+                        <td>Brandon Moreno</td>
+                        <td>México</td>
+                    </tr>
+                    <tr id="info-12" class="expand-info">
+                        <td colspan="3">
+                            <img src="https://dmxg5wxfqgb4u.cloudfront.net/2022-07/MORENO_BRANDON_07-30.png" alt="Brandon Moreno" class="fighter-photo">
+                            <p>Estilo: MMA. Récord: 20-6-2. Peso: 125 lb.</p>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 UFC Fight Zone. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

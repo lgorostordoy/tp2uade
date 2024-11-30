@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC Fight Zone</title>
+    <link rel="stylesheet" href="stylesblog.css">
+    <script src="form.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="https://cnbl-cdn.bamgrid.com/assets/74902880ac7921ef97e09cd742a060322bc30dd084146d5031a366c44c4f6da7/original" class="ufc-logo" alt="Logo UFC">
+            <nav>
+                <ul>
+                    <li><a href="peleadores.html">Peleadores</a></li>
+                    <li><a href="rankings.html">Rankings</a></li>
+                    <li><a href="linktree.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>El hogar de las Artes Marciales Mixtas</h2>
+            <p>Sigue lo último en peleas, peleadores y eventos de la UFC.</p>
+            <a href="eventos.html" class="cta-button">Explora los próximos eventos</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="blog-posts">
+            <article class="post">
+                <img src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-03/UFC%2003092022.jpg?itok=5KAs5fMJ" alt="Imagen UFC 1">
+                <div class="post-content">
+                    <h3>Las mejores peleas del 2024</h3>
+                    <p>
+                        Revive los combates más emocionantes del año, con nocauts y sumisiones inolvidables. 
+                        <span class="dots"></span>
+                        <input type="checkbox" id="toggle-1" class="read-more-toggle">
+                        <span class="more-text"> El 2024 ha sido espectacular para la UFC, con combates épicos y momentos inolvidables. Alexander Volkanovski defendió su título de peso pluma contra Ilia Topuria en UFC 300. Islam Makhachev venció a Charles Oliveira en una revancha por el título ligero. Jon Jones sometió a Sergei Pavlovich en su regreso al octágono, mientras Khamzat Chimaev ganó a Kamaru Usman en peso medio. Max Holloway triunfó sobre Yair Rodríguez II, consolidándose en la división.</span>
+                    </p>
+                    <label for="toggle-1" class="read-more-label">Leer más</label>
+                </div>
+            </article>
+            
+            <article class="post">
+                <img src="https://www.mundodeportivo.com/files/image_449_220/uploads/2024/05/15/66449b3a54862.jpeg" alt="Imagen UFC 2">
+                <div class="post-content">
+                    <h3>¿Quién es el mejor peleador de peso ligero?</h3>
+                    <p>
+                        Analizamos a los principales contendientes en la división de peso ligero. ¿Quién se llevará el cinturón?
+                        <span class="dots"> </span>
+                        <input type="checkbox" id="toggle-2" class="read-more-toggle">
+                        <span class="more-text"> La división de peso ligero de la UFC es altamente competitiva, con Islam Makhachev como el campeón indiscutible. Discípulo de Khabib Nurmagomedov, Makhachev ha demostrado su dominio al defender con éxito su cinturón y vencer a contendientes como Charles Oliveira y Alexander Volkanovski. Aunque Makhachev reina, peleadores como Oliveira, Justin Gaethje, Dustin Poirier, Beneil Dariush y Arman Tsarukyan siguen siendo amenazas serias. Sin duda, Makhachev es el mejor peleador de peso ligero actual.</span>
+                    </p>
+                    <label for="toggle-2" class="read-more-label">Leer más</label>
+                </div>
+            </article>
+            
+            <article class="post">
+                <img src="ufcpe.jfif" alt="Imagen UFC 3">
+                <div class="post-content">
+                    <h3>Las Peleas que No Te Puedes Perder en lo que Resta de 2024</h3>
+                    <p>
+                        Conoce los eventos más esperados del año, desde el UFC 300 hasta las peleas por el título mundial.
+                        <span class="dots"></span>
+                        <input type="checkbox" id="toggle-3" class="read-more-toggle">
+                        <span class="more-text">El cierre de 2024 en la UFC presenta eventos emocionantes, con combates decisivos programados. Destacan la revancha entre Islam Makhachev y Charles Oliveira en UFC 308, donde se disputará el título de peso ligero. Jon Jones defenderá su cinturón ante Sergei Pavlovich en UFC 309. Además, Sean O'Malley se enfrentará a Cory Sandhagen en UFC 311, y Brandon Moreno buscará redención en la trilogía contra Alexandre Pantoja en UFC 312, cerrando el año con intensidad. </span>
+                    </p>
+                    <label for="toggle-3" class="read-more-label">Leer más</label>
+                </div>
+            </article>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 UFC Fight Zone. Todos los derechos reservados.</p>
+
+            
+            <section class="subscription-form">
+                <h3>¡Suscríbete para recibir las últimas noticias!</h3>
+                <form id="subscriptionForm" onsubmit="return validateForm()" class="form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                    </div>
+                    <button type="submit" class="submit-button">Suscribirse</button>
+                </form>
+                <p id="formMessage" style="color: green; display: none;">¡Gracias por suscribirte!</p>
+                <p id="formError" style="color: red; display: none;">Por favor, completa todos los campos correctamente.</p>
+            </section>
+        </div>
+    </footer>
+
+    
+
+</body>
+</html>

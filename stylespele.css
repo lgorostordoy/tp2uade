@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    line-height: 1.8;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    border-radius: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    text-align: center; 
+
+}
+   
+.ufc-logo {
+    width: 150px; 
+    height: auto; 
+    object-fit: contain; 
+    margin: 0px; 
+    transition: transform 0.3s ease;
+}
+
+.ufc-logo:hover {
+    transform: scale(1.05); 
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #e50914;
+    color: #0c0c0c;
+}
+
+.category {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.category:hover {
+    transform: scale(1.02);
+}
+
+.fighters {
+    display: flex;          
+    flex-wrap: wrap;       
+}
+
+.fighter {
+    display: flex;         
+    margin: 20px;          
+    flex-basis: 45%;       
+}
+
+.fighter-container {
+    display: flex;          
+    align-items: center;    
+    width: 100%;           
+}
+
+.info {
+    margin-right: 20px;    
+}
+
+.video-section {
+    flex-shrink: 0;        
+    width: 250px;         
+}
+
+video {
+    width:130%;           
+    height: auto;          
+    border-radius: 10px;   
+    object-fit: cover;      
+}
+
+.stats {
+    text-align: left;
+    margin-left: 15px;
+    color: #f1f1f1;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.fighter img {
+    width: 150px; 
+    height: auto; 
+    aspect-ratio: 3 / 4; 
+    object-fit: cover; 
+    border-radius: 5px;    
+}
+
+.stats p {
+    margin: 5px 0;
+}
+
+
+
+footer {
+    background-color: #1a1a1a;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
